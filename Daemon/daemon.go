@@ -14,7 +14,7 @@ import (
 	"syscall"
 )
 
-func startDaemon() {
+func StartDaemon() {
 	if syscall.Getppid() == 1 { // already daemon
 		f, err := os.OpenFile("/dev/null", os.O_RDWR, 0)
 		if err != nil {
