@@ -7,6 +7,7 @@
 package Logger
 
 import (
+	"../Config"
 	"errors"
 	"fmt"
 	"io"
@@ -16,7 +17,6 @@ import (
 	"runtime/debug"
 	"sync"
 	"time"
-	"golibs/Config"
 )
 
 // 日志常用参数
